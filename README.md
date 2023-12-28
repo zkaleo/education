@@ -48,7 +48,7 @@ USAGE:
 OPTIONS:
         --account <ACCOUNT>            //礦池中生成的挖礦用戶名
     -h, --help                         //打印幫助信息
-        --pool <POOL>                  //礦池連接地址、wss://aleo.zkaleo.cn:3888
+        --pool <POOL>                  //礦池連接地址、wss://client.zkaleo.cn:3888
         --rest <REST>                  //本地監聽端口、默認0.0.0.0:9988
     -v, --version                      //程序版本
         --worker-name <WORKER_NAME>    //輸入你的礦機名稱
@@ -66,7 +66,7 @@ USAGE:
 OPTIONS:
         --address <ADDRESS>            //你的aleo錢包地址
     -h, --help                         //打印幫助信息
-        --proxy <PROXY>                //礦池連接地址、wss://aleo.zkaleo.cn:3999
+        --proxy <PROXY>                //礦池連接地址、wss://client.zkaleo.cn:3999
         --rest <REST>                  //本地監聽端口、默認0.0.0.0:9988
     -v, --version                      //程序版本
         --worker-name <WORKER_NAME>    //輸入你的礦機名稱
@@ -78,15 +78,15 @@ OPTIONS:
 #下載後首先添加可執行權限
 chmod +x zkaleo-pool-prover
 #礦池程序啟動示例
-./zkaleo-pool-prover --account test01 --pool wss://aleo.zkaleo.cn:3888 --worker-name 192-168-100-101
+./zkaleo-pool-prover --account test01 --pool wss://client.zkaleo.cn:3888 --worker-name 192-168-100-101
 
 #solo程序啟動示例
-./zkaleo-solo-prover --address aleo1308gq2pfn0y3hgm722wysx4ks8szxsxaxsdnjnabdy --proxy wss://aleo.zkaleo.cn:3999 --worker-name x99-01
+./zkaleo-solo-prover --address aleo1308gq2pfn0y3hgm722wysx4ks8szxsxaxsdnjnabdy --proxy wss://client.zkaleo.cn:3999 --worker-name x99-01
 ```
 
 ## 6、後臺運行挖礦程序
 ```shell
-nohup ./zkaleo-pool-prover --account test01 --pool wss://aleo.zkaleo.cn:3888 --worker-name 192-168-100-101 &> /root/zkaleo-pool-prover.log &
+nohup ./zkaleo-pool-prover --account test01 --pool wss://client.zkaleo.cn:3888 --worker-name 192-168-100-101 &> /root/zkaleo-pool-prover.log &
 ```
 
 檢查zkaleo-pool-prover.log日誌、顯示如下信息，則說明程序運行正常
