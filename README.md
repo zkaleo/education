@@ -26,11 +26,11 @@ zkaleo ALEO挖礦方式為用戶名挖礦，需註冊礦池帳戶後根據引導
 
 [下載地址](https://github.com/zkaleo/education/releases)
 ```shell
-zkaleo-pool-prover 	//Ubuntu系統礦池挖礦程序
+zkaleo-pool-prover 	        //Ubuntu系統礦池挖礦程序
 
-zkaleo-solo-prover 	//Ubuntu系統solo挖礦程序
+zkaleo-solo-prover.tar.gz  //Ubuntu系統solo挖礦程序
 
-zkaleominer 		//HiveOS系統礦池挖礦程序
+zkaleominer 		       //HiveOS系統礦池挖礦程序
 ```
 
 
