@@ -1,9 +1,11 @@
 
+[Click to view the English version tutorial～～～](https://github.com/zkaleo/education/blob/main/README_EN.md)
+
 ## 1、準備挖礦設備
 
 操作系統：推薦使用如下系统、暫不兼容桌面版ubuntu
 
- HiveOS [教程](https://github.com/zkaleo/education/blob/main/hiveOS/)
+ HiveOS [教程](https://github.com/zkaleo/education/tree/main/hiveOS)
 
  Ubuntu 18.04 server
  

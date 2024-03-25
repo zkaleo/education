@@ -1,3 +1,5 @@
+[点击查看中文版本的教程～～～](https://github.com/zkaleo/education/blob/main/README.md)
+
 ## 1. Prepare Mining Equipment
 
 Operating System: It is recommended to use the following systems, desktop versions of Ubuntu are temporarily not compatible.
