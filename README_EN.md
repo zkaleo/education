@@ -50,18 +50,18 @@ After starting mining, mining income will be automatically accumulated in the re
 
 [Click here to enter the mining program download address～～～](https://github.com/zkaleo/education/releases)
 ```shell
-aleo-pool-prover          //Mining program for Ubuntu system pool
+zkaleo-pool-prover           //Mining program for Ubuntu system pool
 
-aleo-solo-prover.tar.gz   //Solo mining program for Ubuntu system
+zkaleo-solo-prover.tar.gz   //Solo mining program for Ubuntu system
 
-zklion_miner.tar.gz       //Mining program for HiveOS system pool
+zkaleoMiner.tar.gz       //Mining program for HiveOS system pool
 ```
 
 ## 4. Explanation of Program Parameters
 
 ```shell
 #Pool mining program
-./aleo-pool-prover --help
+./zkaleo-pool-prover --help
 ZKLION-pool-prover 0.1.0 (7b503b8 2023-11-08)
 
 USAGE:
@@ -70,7 +70,7 @@ USAGE:
 OPTIONS:
         --account <ACCOUNT>            //Mining username generated in the pool
     -h, --help                         //Print help information
-        --pool <POOL>                  //Pool connection address, wss://aleo.zklion.com:3777
+        --pool <POOL>                  //Pool connection address, wss://client.zkaleo.cn:3888
         --rest <REST>                  //Local listening port, default 0.0.0.0:9988
     -v, --version                      //Program version
         --worker-name <WORKER_NAME>    //Enter your miner name
@@ -79,7 +79,7 @@ OPTIONS:
 
 ```shell
 #Solo mining program
-./aleo-solo-prover --help
+./zkaleo-solo-prover --help
 -solo-prover 0.1.0 (ca566ce 2024-01-11)
 
 USAGE:
@@ -88,7 +88,7 @@ USAGE:
 OPTIONS:
         --address <ADDRESS>            //Your aleo wallet address
     -h, --help                         //Print help information
-        --proxy <PROXY>                //Pool connection address, wss://aleo.zklion.com:3666
+        --proxy <PROXY>                //Pool connection address, wss://client.zkaleo.cn:3999
         --rest <REST>                  //Local listening port, default 0.0.0.0:9988
     -v, --version                      //Program version
         --worker-name <WORKER_NAME>    //Enter your miner name
@@ -98,19 +98,20 @@ OPTIONS:
 
 ```shell
 #Add executable permissions after download
-chmod +x aleo-pool-prover
+chmod +x zkaleo-pool-prover
 #Example of pool program startup
-./aleo-pool-prover --account test01 --pool wss://aleo.zklion.com:3777 --worker-name 192-168-100-101
+./zkaleo-pool-prover --account test --pool wss://client.zkaleo.cn:3888 --worker-name 192-158-22-101
+
 
 #Example of solo program startup
 1. Unzip
-tar -zxvf aleo-solo-prover.tar.gz
+tar -zxvf zkaleo-solo-prover.tar.gz
 2. Enter the extracted directory
-cd aleo-solo-prover/
+cd zkaleo-solo-prover/
 3. Add executable permissions
-chmod +x aleo-solo-prover
+chmod +x zkaleo-solo-prover
 4. Start
-./aleo-solo-prover --address aleo1308gq2pfn0y3xxxx --proxy wss://aleo.zklion.com:3666 --worker-name x99-01
+./zkaleo-solo-prover --address aleo1308gq2pfn0y3hgm722wysx4ks8szxs*** --proxy wss://client.zkaleo.cn:3999 --worker-name x66-01
 ```
 
 ## 6. Running Mining Programs in the Background
@@ -118,16 +119,16 @@ The following examples are for demonstration purposes. Replace the parameters wi
 
 Run the pool program in the background:
 ```shell
-nohup ./aleo-pool-prover --account test01 --pool wss://aleo.zklion.com:3777 --worker-name 192-168-100-101 &> /root/zklion-pool-prover.log &
+nohup ./zkaleo-pool-prover --account test01 --pool wss://client.zkaleo.cn:3888 --worker-name 192-168-90-100 &> /root/zkaleo-pool-prover.log &
 ```
 
 Run the solo program in the background:
 ```shell
-nohup ./aleo-solo-prover --address aleo1308gq2pfn0y3xxxx --proxy wss://aleo.zklion.com:3666 --worker-name 192-168-100-102 &> /root/zklion-solo-prover.log &
+nohup ./zkaleo-solo-prover --address aleo1308gq2pfn0y3xxxx --proxy wss://client.zkaleo.cn:3999 --worker-name 192-168-90-101 &> /root/zkaleo-solo-prover.log &
 ```
 
-## Check zklion-pool-prover.log Log
+## Check zkaleo-pool-prover.log Log
 
-If the zklion-pool-prover.log log displays the following information, it indicates that the program is running normally:
+If the zkaleo-pool-prover.log log displays the following information, it indicates that the program is running normally:
 
-<img width="845" alt="image" src="https://github.com/zklion-miner/Aleo-miner/assets/137146992/1f13df80-6dfe-46f2-8fcf-38e835b8a3b1">
+<img width="845" alt="image" src="https://github.com/chihua2023/zkaleo/assets/137146992/cfaa57cc-f719-4d50-b214-9177db560bb0">

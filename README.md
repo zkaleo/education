@@ -3,11 +3,12 @@
 
 操作系統：推薦使用如下系统、暫不兼容桌面版ubuntu
 
+ HiveOS [教程](https://github.com/zkaleo/education/blob/main/hiveOS/)
+
  Ubuntu 18.04 server
  
  Ubuntu 20.04 server
  
- HiveOS [教程](https://github.com/zklion-miner/Aleo-miner/tree/master/HiveOS)
 
 系統下載地址：https://releases.ubuntu.com/focal/ubuntu-20.04.6-live-server-amd64.iso
 
@@ -119,13 +120,27 @@ cd zkaleo-solo-prover/
 3、添加可執行權限
 chmod +x zkaleo-solo-prover
 4、啟動
-./zkaleo-solo-prover --address aleo1308gq2pfn0y3hgm722wysx4ks8szxsxaxsdnjnaabc --proxy wss://client.zkaleo.cn:3999 --worker-name x66-01
+./zkaleo-solo-prover --address aleo1308gq2pfn0y3hgm722wysx4ks8szxs*** --proxy wss://client.zkaleo.cn:3999 --worker-name x66-01
 ```
 
-## 6、後臺運行挖礦程序
+<!-- ## 6、後臺運行挖礦程序
 ```shell
 nohup ./zkaleo-pool-prover --account test --pool wss://client.zkaleo.cn:3888 --worker-name 192-158-22-101 &> /root/zkaleo-pool-prover.log &
+``` -->
+
+## 6、后台運行挖礦程序、如下为示例、实际运行时请将参数替换为自己的
+
+矿池程序后台运行：
+```shell
+nohup ./zkaleo-pool-prover --account test01 --pool wss://client.zkaleo.cn:3888 --worker-name 192-168-90-100 &> /root/zkaleo-pool-prover.log &
 ```
+
+solo程序后台运行：
+```shell
+nohup ./zkaleo-solo-prover --address aleo1308gq2pfn0y3xxxx --proxy wss://client.zkaleo.cn:3999 --worker-name 192-168-90-101 &> /root/zkaleo-solo-prover.log &
+```
+
+
 
 檢查zkaleo-pool-prover.log日誌、顯示如下信息，則說明程序運行正常
 <img width="847" alt="image" src="https://github.com/chihua2023/zkaleo/assets/137146992/cfaa57cc-f719-4d50-b214-9177db560bb0">
